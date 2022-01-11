@@ -123,7 +123,7 @@ h1 {
   }
 
   .hero {
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 80px), 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40px), 0 100%);
   }
 
   .card > * {
