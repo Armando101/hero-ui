@@ -52,6 +52,10 @@ h1 {
   background-color: white;
 }
 
+.content > img {
+  display: none;
+}
+
 .hero h1 {
   font-family: var(--secondaryFont);
   font-size: 40px;
@@ -97,4 +101,67 @@ h1 {
   inset-block: 0;
   z-index: 1;
   clip-path: polygon(0 0, calc(100% - 151px) 0, 100% 100%, 0 100%);
+}
+
+@media screen and (max-width: 1440px) {
+  .wrapper {
+    max-inline-size: calc(100% - 83px);
+  }
+  .hero::before {
+    inline-size: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    max-inline-size: 100%;
+  }
+
+  .hero {
+    background-image: none;
+    block-size: 100%;
+  }
+
+  .hero {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 80px), 0 100%);
+  }
+
+  .card > * {
+    margin-block-end: 1.5rem;
+  }
+
+  .content > img {
+    display: block;
+    height: 584px;
+    object-fit: cover;
+  }
+
+  .hero-content {
+    display: block;
+    block-size: 100%;
+  }
+
+  .hero-content button {
+    width: 100%;
+  }
+
+  .wrapper {
+    padding-block: 2.5rem;
+    block-size: 20rem;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .content > img {
+    height: 274px;
+  }
+  .wrapper {
+    block-size: 23rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .wrapper {
+    block-size: 27rem;
+  }
 }
