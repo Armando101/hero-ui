@@ -37,7 +37,7 @@ h1 {
   block-size: 768px;
   background-image: url("../images/img.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   background-color: var(--black-1);
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 128px), 0 100%);
